@@ -1,11 +1,11 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+title: Ludomancer Studio
+email: ludomancerstudio@gmail.com
+url: https://guizx.github.io/ludomancerstudio
+description: "Ludomancer Studio creates immersive indie games that blend dark fantasy, horror, and deep narrative design. From tactical RPGs to psychological visual novels, we bring compelling worlds to life."
+keywords: "games, indie game studio, horror, dark fantasy, Ludomancer Studio, visual novel, roguelike"
+skills: "Dark Fantasy - Horror Games - Narrative Design - Visual Novels"
+meta_author: Gui Santos
 
 # Google webmaster tools
 google_verify:
