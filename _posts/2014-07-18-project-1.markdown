@@ -10,5 +10,5 @@ status: In Development
 link: https://store.steampowered.com/app/2960360/Hotel_77/
 category: Unity Development, Horror Game Systems
 description: >
-  Hotel77 is a first-person psychological horror game set in a haunted hotel locked in a time loop. Ludomancer Studio handled the full-cycle production, developing modular 3D environments and a looping event system in Unity. We implemented custom logic for sanity effects, procedural corridor navigation, and environmental audio triggers. Features include dynamic lighting, collectible lore elements, a responsive UI, and puzzle scripting with temporal resets. Built with a post-processing stack designed to convey claustrophobia and psychological tension.
+  Hotel77 is a first-person psychological horror game set in a haunted hotel locked in a time loop. We are currently developing this project as a case study, creating multiple levels in Unity as well as a procedural corridor navigation. Features include dynamic lighting, collectible lore elements, a responsive UI, multiple languages localization, environmental audio and event triggers, and puzzle scripting.
 ---

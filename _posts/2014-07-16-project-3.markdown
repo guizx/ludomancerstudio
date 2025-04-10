@@ -10,5 +10,5 @@ status: Launched on February 2025
 link: https://store.steampowered.com/app/3424010/The_Night_of_the_Exorcism/
 category: Visual Novel Development, Narrative Systems
 description: >
-  The Night of the Exorcism is a narrative-driven horror visual novel developed entirely in Ren'Py. Ludomancer Studio created a branching story framework with variable tracking, morality systems, and multiple outcomes based on player sin accumulation. The project included custom UI, animated transitions, variable-based enemy reactions, and modular narrative events. We also handled all scripting, localization readiness, and audio layering for tension escalation, building a polished interactive fiction system aimed at narrative experimentation.
+  The Night of the Exorcism is a narrative-driven horror visual novel developed entirely in Ren'Py. Ludomancer Studio created a branching story framework with variable tracking, morality systems, and multiple outcomes based on player choices. The project included custom UI, animated transitions, and variable-based branching narrative. We also handled all scripting, localization, and audio, building a polished interactive fiction system aimed at narrative experimentation.
 ---
