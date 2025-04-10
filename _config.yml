@@ -1,5 +1,5 @@
 # Site settings
-title: Ludomancer Studio
+title: Ludomancer
 email: ludomancerstudio@gmail.com
 url: https://guizx.github.io/ludomancerstudio
 description: "Ludomancer Studio creates immersive indie games that blend dark fantasy, horror, and deep narrative design. From tactical RPGs to psychological visual novels, we bring compelling worlds to life."
@@ -39,16 +39,17 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: instagram
+    url: https://www.instagram.com/ludomancerstudio
   - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+    url: https://x.com/Ludomancer
+  - title: steam
+    url: https://store.steampowered.com/developer/ludomancer
+  - title: itch-io
+    url: https://ludomancerstudio.itch.io
+  - title: tiktok
+    url: https://www.tiktok.com/@ludomancerstudio
+
 
 # Postal address (add as many lines as necessary)
 #address:
