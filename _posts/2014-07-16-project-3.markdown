@@ -1,11 +1,14 @@
 ---
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: circus.png
+title: The Night of the Exorcism
+date: 2024-01-12
+img: exorcism.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+project-date: January 2024
+status: Launched on February 2025
+link: https://store.steampowered.com/app/3424010/The_Night_of_the_Exorcism/
+category: Visual Novel Development, Narrative Systems
+description: >
+  The Night of the Exorcism is a narrative-driven horror visual novel developed entirely in Ren'Py. Ludomancer Studio created a branching story framework with variable tracking, morality systems, and multiple outcomes based on player sin accumulation. The project included custom UI, animated transitions, variable-based enemy reactions, and modular narrative events. We also handled all scripting, localization readiness, and audio layering for tension escalation, building a polished interactive fiction system aimed at narrative experimentation.
 ---

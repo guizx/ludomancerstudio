@@ -20,24 +20,30 @@
             <p>{{ post.description }}</p>
             {% endif %}
             <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
-              </li>
-              {% endif %}
               {% if post.project-date %}
               <li>Date:
                 <strong>{{ post.project-date }}</strong>
               </li>
               {% endif %}
+              {% if post.status %}
+              <li>Status:
+                <strong>{{ post.status }}</strong>
+              </li>
+              {% endif %}
               {% if post.category %}
-              <li>Service:
+              <li>Highlights:
                 <strong>{{ post.category }}</strong>
               </li>
               {% endif %}
+              {% if post.link %}
+              <li>Steam:
+                <strong><a href="{{ post.link }}" target="_blank" rel="noopener">View on Steam</a></strong>
+              </li>
+              {% endif %}
             </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-              Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              <i class="fa fa-times"></i> Close
+            </button>
           </div>
         </div>
       </div>
