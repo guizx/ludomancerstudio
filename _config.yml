@@ -1,0 +1,72 @@
+# Site settings
+title: Ludomancer Studio
+email: ludomancerstudio@gmail.com
+url: https://guizx.github.io/ludomancerstudio
+description: "Ludomancer Studio creates immersive indie games that blend dark fantasy, horror, and deep narrative design. From tactical RPGs to psychological visual novels, we bring compelling worlds to life."
+keywords: "games, indie game studio, horror, dark fantasy, Ludomancer Studio, visual novel, roguelike"
+skills: "Full-Cycle Game Development Studio"
+meta_author: Gui Santos
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Contact form:
+# - static : pass through formspree.io to validate email sending
+# - disqus : replace contact form by disqus thread
+# - comment the line below if you want to stick with the default PHP contact form
+contact: static
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 1a1a1a          # Black (used for background)
+  primary-rgb: "0,0,0"     # For transparency overlays
+  secondary: 333333        # White (used for text)
+  secondary-dark: 999999   # Light gray (for hovers, accents)
+
+# Footer settings
+footer:
+  copyright: Ludomancer Studio
+  #location: Location
+  social: Follow Us
+  #credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: instagram
+    url: https://www.instagram.com/ludomancerstudio
+  - title: twitter
+    url: https://x.com/Ludomancer
+  - title: steam
+    url: https://store.steampowered.com/curator/45579119
+  - title: itch-io
+    url: https://ludomancerstudio.itch.io
+  - title: tiktok
+    url: https://www.tiktok.com/@ludomancerstudio
+
+
+# Postal address (add as many lines as necessary)
+#address:
+  #- line: 3481 Melrose Place
+  #- line: Beverly Hills, CA 90210
+
+# Credits content
+#credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""

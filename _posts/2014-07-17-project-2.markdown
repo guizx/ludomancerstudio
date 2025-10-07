@@ -1,0 +1,14 @@
+---
+layout: default
+modal-id: 2
+title: Fallen Slayers
+date: 2024-03-18
+img: fallen.png
+alt: image-alt
+project-date: March 2024
+status: Demo Available
+link: https://store.steampowered.com/app/2352010/Fallen_Slayers/
+category: Unity Development, Roguelike Systems
+description: >
+  Fallen Slayers is a fast-paced, top-down action roguelike where the player controls a fallen hero bound to dark patrons. We designed the core gameplay loop, procedural enemy spawning, and customizable upgrade trees. We implemented a modular stat system tied to soul, patron, and pact combinations—, each changing gameplay outcomes. The current demo includes two champions and two patrons, each with custom behaviors, as well as boss fights, area-of-effect abilities, conditional curses, and progression rewards using persistent currencies.
+---
