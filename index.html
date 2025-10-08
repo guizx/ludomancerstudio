@@ -1,3 +1,494 @@
----
-layout: default
----
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ludomancer Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickity@3/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="./image/png" href="images/favico.ico">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top py-3 transition-all">
+        <div class="container">
+            <a class="navbar-brand fw-bold opacity-0 transition-all" href="#"><img width="50px"
+                    src="./images/logo-5.png" alt="Logo" class="navbar-logo me-2">LUDOMANCER STUDIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">GAMES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero"
+        class="position-relative d-flex align-items-center justify-content-center text-center text-white">
+        <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            id="bg-video">
+            <source src="./video/reel.mp4" type="video/mp4">
+
+        </video>
+
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5);"></div>
+        <div class="position-relative animate__animated animate__flip">
+            <div class="logo">
+                <img class="hero-image" src="./images/logo-5.png" alt="">
+                <h1 class="display-3 fw-bold">LUDOMANCER STUDIO</h1>
+                <p class="lead">Creating unforgettable experiences</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container text-center">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm p-4">
+                        <i class="bi bi-puzzle service-icon"></i>
+                        <h5 class="card-title">Game Design</h5>
+                        <p class="card-text">Game documentation, game design canvas, Level design, wireframing.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm p-4">
+                        <i class="bi bi-image service-icon"></i>
+                        <h5 class="card-title">2D Art</h5>
+                        <p class="card-text">Character art, environment art, animation, vfx.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm p-4">
+                        <i class="bi bi-gear service-icon"></i>
+                        <h5 class="card-title">Development</h5>
+                        <p class="card-text">Unity, C#, Unreal Blueprints, Rapid prototyping, Fortnite Maps.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm p-4">
+                        <i class="bi bi-book service-icon"></i>
+                        <h5 class="card-title">Narrative</h5>
+                        <p class="card-text">Scriptwriting, Branching dialogues, editing, localization.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                    <div class="card border-0 shadow-sm p-4">
+                        <i class="bi bi-controller service-icon"></i>
+                        <h5 class="card-title">Porting</h5>
+                        <p class="card-text">Porting for PS4, PS5, XBOX, and Nintendo Switch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CARROSSEL ===== -->
+    <section id="home" class="position-relative">
+        <div class="home-title-div">
+
+            <h2 class="home-title position-absolute top-15 start-50 translate-middle text-white fw-bold text-uppercase">
+                Games
+            </h2>
+        </div>
+
+        <div class="carousel js-flickity">
+            <div class="carousel-cell" data-modal="#gameModal1">
+                <img src="./images/carousel-game-1.png" alt="Imagem 1" draggable="false">
+            </div>
+            <div class="carousel-cell" data-modal="#gameModal2">
+                <img src="./images/carousel-game-2.png" alt="Imagem 2" draggable="false">
+            </div>
+            <div class="carousel-cell" data-modal="#gameModal3">
+                <img src="./images/carousel-game-3.png" alt="Imagem 3" draggable="false">
+            </div>
+            <div class="carousel-cell" data-modal="#gameModal4">
+                <img src="./images/carousel-game-4.png" alt="Imagem 3" draggable="false">
+            </div>
+            <div class="carousel-cell" data-modal="#gameModal5">
+                <img src="./images/carousel-game-5.png" alt="Imagem 3" draggable="false">
+            </div>
+            <div class="carousel-cell" data-modal="#gameModal6">
+                <img src="./images/carousel-game-6.png" alt="Imagem 3" draggable="false">
+            </div>
+        </div>
+
+        <div id="hero-light" class="position-absolute bottom-0 start-0 w-100"
+            style="height:150px; pointer-events:none; mix-blend-mode:screen;"></div>
+    </section>
+
+
+    <!-- HOTEL 77 -->
+    <div class="modal fade" id="gameModal1" tabindex="-1" aria-labelledby="gameModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/HW0fq2XMoqw" title="Hotel77 Trailer"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-description">
+                        <h4>Hotel 77</h4>
+                        <p>Hotel77 is a first-person psychological horror game set in a haunted hotel locked in a time
+                            loop. We are currently developing this project as a case study, creating multiple levels in
+                            Unity as well as a procedural corridor navigation. Features include dynamic lighting,
+                            collectible lore elements, a responsive UI, multiple languages localization, environmental
+                            audio and event triggers, and puzzle scripting.</p>
+                        <div style="font-size: 12px; color: #7e7e7e;">
+                            <p>Data: <strong>July 2024</strong> | Status: <strong>In Development</strong> | Highlight:
+                                <strong>Unity Development, Horror Game Systems</strong>
+                            </p>
+                        </div>
+
+
+                        <br>
+                        <a href="https://store.steampowered.com/app/2960360/Hotel_77" target="_blank"
+                            class="btn btn-outline-secondary"> <i class="bi bi-controller"></i> View on
+                            Steam</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE NIGHT OF THE EXORCISM -->
+    <div class="modal fade" id="gameModal2" tabindex="-1" aria-labelledby="gameModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/p62f0Hm20UQ" title="The Night of The Exorcism"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="modal-description">
+
+                        <h4>The Night of The Exorcism</h4>
+                        <p>The Night of the Exorcism is a narrative-driven horror visual novel developed entirely in
+                            Ren'Py. Ludomancer Studio created a branching story framework with variable tracking,
+                            morality systems, and multiple outcomes based on player choices. The project included custom
+                            UI, animated transitions, and variable-based branching narrative. We also handled all
+                            scripting, localization, and audio, building a polished interactive fiction system aimed at
+                            narrative experimentation.</p>
+                        <br>
+
+                        <div style="font-size: 12px; color: #7e7e7e;">
+                            <p>Data: <strong>January 2024</strong> | Status: <strong>Launched on February 2025</strong>
+                                | Highlight:
+                                <strong>Visual Novel Development, Narrative Systems</strong>
+                            </p>
+                        </div>
+                        <a href="https://store.steampowered.com/app/3424010/The_Night_of_the_Exorcism/" target="_blank"
+                            class="btn btn-outline-secondary"> <i class="bi bi-controller"></i> View on
+                            Steam</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UMBRAL TACTICS -->
+    <div class="modal fade" id="gameModal3" tabindex="-1" aria-labelledby="gameModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/xguT6dCVcpY" title="The Night of The Exorcism"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="modal-description">
+
+                        <h4>Umbral Tactics</h4>
+                        <p>Umbral Tactics is a tactical RPG set in the dark and mysterious world of Umbral, where lost
+                            souls face brutal challenges in turn-based combat. Inspired by Brazilian folklore and
+                            history, the game blends mythical creatures like the Corpo-Seco and the Boitatá with a dark
+                            fantasy setting.
+                        </p>
+                        <br>
+
+                        <div style="font-size: 12px; color: #7e7e7e;">
+                            <p>Data: <strong>Octuber 2024</strong> | Status: <strong>In development</strong>
+                                | Highlight:
+                                <strong>Unity Development, Tactical Systems</strong>
+                            </p>
+                        </div>
+                        <a href="https://ludomancerstudio.itch.io/umbral-tactics-demo" target="_blank"
+                            class="btn btn-outline-secondary"> <i class="bi bi-controller"></i> View on
+                            Itch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ALL STARS MERGE -->
+    <div class="modal fade" id="gameModal4" tabindex="-1" aria-labelledby="gameModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/vCiVDS869zs" title="The Night of The Exorcism"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="modal-description">
+
+                        <h4>All Stars Merge</h4>
+                        <p>Play the perfect blend of sports and strategy! Merge elements, collect, and improve your
+                            cards to complete your album each season!</p>
+                        <p>Live service development done for the All Stars Merge game for Hermit Crab. We were
+                            responsible for improving and adding new content and systems on regular updates.</p>
+                        <br>
+
+                        <!-- <div style="font-size: 12px; color: #7e7e7e;">
+                            <p>Data: <strong>January 2024</strong> | Status: <strong>Launched on February 2025</strong>
+                                | Highlight:
+                                <strong>Visual Novel Development, Narrative Systems</strong>
+                            </p>
+                        </div> -->
+                        <a href="https://play.google.com/store/apps/details?id=com.hermitcrabstudio.f2p.allstarsmerge"
+                            target="_blank" class="btn btn-outline-secondary"> <i class="bi bi-controller"></i> View on
+                            Play Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ECLUB -->
+    <div class="modal fade" id="gameModal5" tabindex="-1" aria-labelledby="gameModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-3">
+                        <img src="./images/eclub-cover-art.png" alt="">
+                        <!-- <iframe src="https://www.youtube.com/embed/p62f0Hm20UQ" title="The Night of The Exorcism"
+                            allowfullscreen></iframe> -->
+                    </div>
+
+                    <div class="modal-description">
+
+                        <h4>Eclub</h4>
+                        <p>We provided UX and game design services to enhance a white-label gamified
+                            platform used by major clients. Our team focused on fixing structural issues, designing new
+                            mechanics, and coordinating development to ensure smooth multi-version launches.
+                        </p>
+                        <br>
+
+                        <!-- <div style="font-size: 12px; color: #7e7e7e;">
+                            <p>Data: <strong>January 2024</strong> | Status: <strong>Launched on February 2025</strong>
+                                | Highlight:
+                                <strong>Visual Novel Development, Narrative Systems</strong>
+                            </p>
+                        </div> -->
+                        <a href="https://hermitcrabstudio.com/pt/portfolio/eclub" target="_blank"
+                            class="btn btn-outline-secondary"> <i class="bi bi-controller"></i> Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THE EXORCIST LEGION VR   -->
+    <div class="modal fade" id="gameModal6" tabindex="-1" aria-labelledby="gameModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 mb-3">
+                        <iframe src="https://www.youtube.com/embed/qfgcoph_IFg" title="The Night of The Exorcism"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="modal-description">
+
+                        <h4>The Exorcist Legion VR</h4>
+                        <p>We supported the latest game update with VenturionVR by designing gameplay improvements,
+                            delivering full documentation for new features, and creating the conceptual design for a new
+                            epilogue level.
+                        </p>
+                        <br>
+
+                        <!-- <div style="font-size: 12px; color: #7e7e7e;">
+                            <p>Data: <strong>January 2024</strong> | Status: <strong>Launched on February 2025</strong>
+                                | Highlight:
+                                <strong>Visual Novel Development, Narrative Systems</strong>
+                            </p>
+                        </div> -->
+                        <a href="https://store.steampowered.com/app/708580/The_Exorcist_Legion_VR__Chapter_1_First_Rites/"
+                            target="_blank" class="btn btn-outline-secondary"> <i class="bi bi-controller"></i> View on
+                            Steam</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- ===== ABOUT US ===== -->
+    <section id="about" class="bg-white">
+        <div class="container text-center">
+            <h2 class="mb-4 section-title translate-center fw-bold text-uppercase">ABOUT US</h2>
+
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <img class="about-gamepad-img img-fluid" src="./images/gamepad-2.png" alt="Gamepad">
+                </div>
+
+                <!-- Texto -->
+                <div class="col-12 col-md-6 col-lg-5 text-start">
+                    <p class="lead">
+                        We work with clients, publishers, and creative partners to deliver genre-defining experiences.
+                        Every system we
+                        build and story we craft is part of a greater spell: creating unforgettable interactive
+                        realities.
+                    </p>
+                    <p class="lead">
+                        Ludomancer Studio is an independent game development company focused on full-cycle production of
+                        immersive,
+                        narrative-driven games. We specialize in game design, programming, storytelling, visual
+                        direction, and systems
+                        that support deep player engagement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARTNERS ===== -->
+    <section id="partners" class="bg-light position-relative overflow-hidden">
+        <div class="container text-center">
+            <h2 class="mb-4 section-title translate-center fw-bold text-uppercase"
+                style="background-color: white !important; color: #0f0f0f;">PARTNERS</h2>
+        </div>
+
+        <div class="partners-carousel">
+            <div class="partners-track">
+                <a href="https://www.falifetec.com.br/" target="_blank"><img src="./images/partner-1.png"
+                        alt="Partner 1"></a>
+                <a href="https://www.sfu.ca/" target="_blank"><img src="./images/partner-2.png" alt="Partner 2"></a>
+                <a href="https://cavylabs.com/" target="_blank"><img src="./images/partner-3.png" alt="Partner 3"></a>
+                <a href="https://www.venturion.com.br/" target="_blank"><img src="./images/partner-4.png"
+                        alt="Partner 4"></a>
+                <a href="https://werocreative.com/" target="_blank"><img src="./images/partner-5.png"
+                        alt="Partner 5"></a>
+                <a href="https://hermitcrabstudio.com/" target="_blank"><img src="./images/partner-6.png"
+                        alt="Partner 6"></a>
+                <a href="https://www.goiabagamesstudio.com/" target="_blank"><img src="./images/partner-7.png"
+                        alt="Partner 7"></a>
+                <a href="https://medgrupo.com.br/" target="_blank"><img src="./images/partner-8.png"
+                        alt="Partner 8"></a>
+
+                <a href="https://www.falifetec.com.br/" target="_blank"><img src="./images/partner-1.png"
+                        alt="Partner 1"></a>
+                <a href="https://www.sfu.ca/" target="_blank"><img src="./images/partner-2.png" alt="Partner 2"></a>
+                <a href="https://cavylabs.com/" target="_blank"><img src="./images/partner-3.png" alt="Partner 3"></a>
+                <a href="https://www.venturion.com.br/" target="_blank"><img src="./images/partner-4.png"
+                        alt="Partner 4"></a>
+                <a href="https://werocreative.com/" target="_blank"><img src="./images/partner-5.png"
+                        alt="Partner 5"></a>
+                <a href="https://hermitcrabstudio.com/" target="_blank"><img src="./images/partner-6.png"
+                        alt="Partner 6"></a>
+                <a href="https://www.goiabagamesstudio.com/" target="_blank"><img src="./images/partner-7.png"
+                        alt="Partner 7"></a>
+                <a href="https://medgrupo.com.br/" target="_blank"><img src="./images/partner-8.png"
+                        alt="Partner 8"></a>
+
+                <a href="https://www.falifetec.com.br/" target="_blank"><img src="./images/partner-1.png"
+                        alt="Partner 1"></a>
+                <a href="https://www.sfu.ca/" target="_blank"><img src="./images/partner-2.png" alt="Partner 2"></a>
+                <a href="https://cavylabs.com/" target="_blank"><img src="./images/partner-3.png" alt="Partner 3"></a>
+                <a href="https://www.venturion.com.br/" target="_blank"><img src="./images/partner-4.png"
+                        alt="Partner 4"></a>
+                <a href="https://werocreative.com/" target="_blank"><img src="./images/partner-5.png"
+                        alt="Partner 5"></a>
+                <a href="https://hermitcrabstudio.com/" target="_blank"><img src="./images/partner-6.png"
+                        alt="Partner 6"></a>
+                <a href="https://www.goiabagamesstudio.com/" target="_blank"><img src="./images/partner-7.png"
+                        alt="Partner 7"></a>
+                <a href="https://medgrupo.com.br/" target="_blank"><img src="./images/partner-8.png"
+                        alt="Partner 8"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="mb-4 section-title translate-center fw-bold text-uppercase">CONTACT</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/mqapwybv" method="POST">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input class="form-control" type="email" name="email" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Your message here..." name="message"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn w-100">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="text-white text-center py-4">
+        <p class="mb-2">Siga-nos nas redes sociais</p>
+        <div>
+            <a href="https://store.steampowered.com/curator/45579119" target="_blank" class="text-white me-3"><i
+                    class="bi link bi-steam"></i></a>
+            <a href="https://x.com/Ludomancer" target="_blank" class="text-white me-3"><i
+                    class="bi link bi-twitter-x"></i></a>
+            <a href="https://www.instagram.com/ludomancerstudio" target="_blank" class="text-white me-3"><i
+                    class="bi link bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@ludomancerstudio" target="_blank" class="text-white me-3"><i
+                    class="bi link bi-tiktok"></i></a>
+
+        </div>
+        <p class="mt-3 mb-0">© 2025 Ludomancer Studio</p>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flickity@3/dist/flickity.pkgd.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
