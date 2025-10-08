@@ -348,11 +348,14 @@ box-shadow: 0px 0px 105px 12px rgba(255,255,255,0.16);
 /* ABOUT US */
 #about p {
     text-align: justify;
+    font-size: 22px;
 }
 
 .about-gamepad-img {
-    margin-top: -93px;
-    width: 100%;
+    width: 60%;
+    margin-bottom: 70px;
+    animation: float 6s ease-in-out infinite;
+
 }
 
 /* END ABOUT US */
@@ -440,8 +443,7 @@ footer i {
     z-index: 99 !important;
 }
 
-.flickity-page-dot .is-selected{
-    z-index: 99 !important;
-        border: 5px solid white !important;
+.flickity-page-dot.is-selected{
+    border: 5px solid rgba(255, 255, 255, 0.479) !important;
 
 }
