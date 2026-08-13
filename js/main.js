@@ -158,3 +158,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
   window.location.href = `mailto:seuemail@dominio.com?subject=${subject}&body=${body}`;
 });
+
+$('.modal').on('shown.bs.modal', function () {
+    $(this).find('.js-flickity').flickity('resize');
+});
