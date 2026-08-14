@@ -129,10 +129,10 @@ body {
 .home-title {
     top: 0;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 32px;
     z-index: 99;
     background-color: #0f0f0f !important;
-    width: 250px;
+    width: 350px;
     padding: 15px;
     border-radius: 0 0 15px 15px;
 }
@@ -150,6 +150,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    /* height: 460px; */
     border-radius: 0;
 }
 
@@ -446,4 +447,9 @@ footer i {
 .flickity-page-dot.is-selected{
     border: 5px solid rgba(255, 255, 255, 0.479) !important;
 
+}
+
+#space{
+    height: 6px;
+    background-color: #0f0f0f;
 }
