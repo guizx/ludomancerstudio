@@ -7,7 +7,7 @@
 #home,
 #contact,
 #about {
-  scroll-margin-top: 115px;
+    scroll-margin-top: 115px;
 }
 
 body {
@@ -188,11 +188,23 @@ body {
 
 @media (max-width: 768px) {
 
-
     .home-title {
+        top: 0;
+        text-align: center;
+        margin-top: 25px;
+        z-index: 99;
+        background-color: #0f0f0f !important;
+        width: 350px;
+        padding: 15px;
+        border-radius: 0 0 15px 15px;
+    }
+
+
+    /* .home-title {
         font-size: 2rem;
         letter-spacing: 2px;
-    }
+        
+    } */
 
     .flickity-prev-next-button {
         display: none;
@@ -208,35 +220,34 @@ body {
 
     .carousel-cell {
         width: 100%;
-        overflow: hidden;
+        overflow: auto;
         cursor: grab;
     }
 
     .carousel-cell img {
         width: 100%;
-        height: 50vh;
-        object-fit: cover;
+        height: 30vh;
+        /* object-fit: cover; */
         user-select: none;
         -webkit-user-drag: none;
         transition: transform .4s ease;
     }
 
     .carousel-cell.is-selected img {
-        transform: scale(1.03);
+        transform: scale(1);
     }
 }
 
 /* MODALS */
-.modal {
-}
+.modal {}
 
 .modal-content {
     background-color: #0f0f0f !important;
     color: white;
     text-align: center;
-    -webkit-box-shadow:0px 0px 105px 12px rgba(255,255,255,0.16);
--moz-box-shadow: 0px 0px 105px 12px rgba(255,255,255,0.16);
-box-shadow: 0px 0px 105px 12px rgba(255,255,255,0.16);
+    -webkit-box-shadow: 0px 0px 105px 12px rgba(255, 255, 255, 0.16);
+    -moz-box-shadow: 0px 0px 105px 12px rgba(255, 255, 255, 0.16);
+    box-shadow: 0px 0px 105px 12px rgba(255, 255, 255, 0.16);
 }
 
 .modal-body {
@@ -271,11 +282,11 @@ box-shadow: 0px 0px 105px 12px rgba(255,255,255,0.16);
 
 #services .card {
     min-height: 320px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-      background-color: #0f0f0f !important;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    background-color: #0f0f0f !important;
     color: white;
 }
 
@@ -283,64 +294,63 @@ box-shadow: 0px 0px 105px 12px rgba(255,255,255,0.16);
 
 
 #services .card:hover {
-  transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 #services .card::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  z-index: 0;
-  background: conic-gradient(
-    from 0deg,
-    #2e2e2e,
-    #2e2e2e,
-    #2e2e2e,
-    #2e2e2e
-  );
-  border-radius: inherit;
-  animation: spin 3s linear infinite;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: 0;
+    background: conic-gradient(from 0deg,
+            #2e2e2e,
+            #2e2e2e,
+            #2e2e2e,
+            #2e2e2e);
+    border-radius: inherit;
+    animation: spin 3s linear infinite;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 #services .card:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
 
 #services .card::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
-      background-color: #0f0f0f !important;
-  border-radius: inherit;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background-color: #0f0f0f !important;
+    border-radius: inherit;
+    z-index: 1;
 }
 
 #services .card * {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 }
 
 .service-icon {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* END SERVICES */
@@ -440,16 +450,16 @@ footer i {
     }
 }
 
-.flickity-page-dot{
+.flickity-page-dot {
     z-index: 99 !important;
 }
 
-.flickity-page-dot.is-selected{
+.flickity-page-dot.is-selected {
     border: 5px solid rgba(255, 255, 255, 0.479) !important;
 
 }
 
-#space{
+#space {
     height: 6px;
     background-color: #0f0f0f;
 }
